@@ -32,6 +32,15 @@
 	
 %}
 
+%code requires{
+	#include <iostream>
+	#include <ocelot/parser/interface/PTXParser.h>
+	#include <ocelot/parser/interface/PTXLexer.h>
+	#include <hydrazine/interface/debug.h>
+	#include <cassert>
+	#include <cstring>
+}
+
 %union
 {
 	char text[1024];

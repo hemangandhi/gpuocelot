@@ -19,6 +19,15 @@
 #include <unordered_set>
 #include <vector>
 
+typedef struct YYLTYPE YYLTYPE;
+struct YYLTYPE
+{
+  int first_line;
+  int first_column;
+  int last_line;
+  int last_column;
+};
+
 namespace parser
 {
 	/*! \brief An implementation of the Parser interface for PTX */

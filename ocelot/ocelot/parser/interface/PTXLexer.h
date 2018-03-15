@@ -8,7 +8,22 @@
 #ifndef PTX_LEXER_H_INCLUDED
 #define PTX_LEXER_H_INCLUDED
 
-#include <ptxgrammar.hpp>
+//#include <ptxgrammar.hpp>
+union YYSTYPE
+{
+#line 45 "ocelot/ocelot/parser/implementation/ptxgrammar.yy" /* yacc.c:1909  */
+
+	char text[1024];
+	long long int value;
+	long long unsigned int uvalue;
+
+	double doubleFloat;
+	float singleFloat;
+
+#line 342 ".release_build/ocelot/ptxgrammar.hpp" /* yacc.c:1909  */
+};
+
+typedef union YYSTYPE YYSTYPE;
 
 namespace parser
 {
